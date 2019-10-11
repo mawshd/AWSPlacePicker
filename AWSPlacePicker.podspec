@@ -2,7 +2,9 @@ Pod::Spec.new do |s|
   s.name             = 'AWSPlacePicker'
   s.version          = '0.1'
   s.summary          = 'AWSPlacePicker SDK'
-  s.description      = <<-DESC TODO: AWSPlacePicker SDK DESC
+  s.description      = <<-DESC 
+	TODO: AWSPlacePicker SDK 
+DESC
 
   s.homepage         = 'https://github.com/mawshd/AWSPlacePicker'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
