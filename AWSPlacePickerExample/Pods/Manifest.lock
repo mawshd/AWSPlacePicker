@@ -1,3 +1,41 @@
-PODFILE CHECKSUM: ec82bf5e83782fb41c7235b93feb8d1ac95a9a2a
+PODS:
+  - AWSPlacePicker (0.1):
+    - AWSPlacePicker/Resources (= 0.1)
+    - DropDown
+    - GoogleMaps
+    - GooglePlaces
+  - AWSPlacePicker/Resources (0.1):
+    - DropDown
+    - GoogleMaps
+    - GooglePlaces
+  - DropDown (2.3.13)
+  - GoogleMaps (3.5.0):
+    - GoogleMaps/Maps (= 3.5.0)
+  - GoogleMaps/Base (3.5.0)
+  - GoogleMaps/Maps (3.5.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.5.0):
+    - GoogleMaps/Base (= 3.5.0)
+
+DEPENDENCIES:
+  - AWSPlacePicker (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - DropDown
+    - GoogleMaps
+    - GooglePlaces
+
+EXTERNAL SOURCES:
+  AWSPlacePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AWSPlacePicker: 503d4313b77e22207eca70557183d070089291e9
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  GoogleMaps: 32ca02de09de357a10ac773f2c70f1986751392d
+  GooglePlaces: be6f19fe8aa6ff0b5bcccfa1b8805cc977ea1450
+
+PODFILE CHECKSUM: e0b4a35e666e866c1771b7ece8dc517f17234965
 
 COCOAPODS: 1.8.3

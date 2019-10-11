@@ -6,60 +6,457 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0C1885900810601510E0C632060FAF26 /* GooglePlaces */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1DCEC859B4F2831507AA9EFB3577A427 /* Build configuration list for PBXAggregateTarget "GooglePlaces" */;
+			buildPhases = (
+			);
+			dependencies = (
+				B916F5827964906DC2B50536D827847F /* PBXTargetDependency */,
+			);
+			name = GooglePlaces;
+		};
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 48CC349249A19634228A7E1EFD31E551 /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		19BD7117DA3F274D4811CB9146044379 /* Pods-AWSPlacePickerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF310F8BABA8DAA3688240C6637B413 /* Pods-AWSPlacePickerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C36CAE7E5A54F6937A18BBD7055FDD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		EC09F8DD0BFA0C5EC50F0D92F4AD3A3D /* Pods-AWSPlacePickerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA54A0DAA20AC119CD27B6CA6476891 /* Pods-AWSPlacePickerExample-dummy.m */; };
+		050C29784869D84F1A93B97368172D9F /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC95B4887761B71BDC9CE24FF7070BD /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FFEFC199AA33BF659754A95768FE774 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BBBB47487C8EE3937C2928B032BA1F /* DropDownCell.swift */; };
+		13C1C13593600F6F830205D5AA8D34C7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032C1B487DC6B5CF2CB2D0E3491DDFE /* DropDown.swift */; };
+		1B6CCBEC80C18EB4E033152FE1E5BDEB /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816B0438A224F8BB8C9D9E7328811B69 /* DPDConstants.swift */; };
+		1CDB6C4B2EBBC9287B41A996B928D8A0 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8976FBC2494AACDA0DF12925315C1BE7 /* DropDownCell.xib */; };
+		2DBA290BFD5DA7CC665EEEBF7E0CCF24 /* Pods-AWSPlacePickerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B343C248A2C0D1354E0651F94D34E2 /* Pods-AWSPlacePickerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33B77FF5F46673509815278E6F2E813F /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C747A435E6350AD148054ED95D189F /* DPDUIView+Extension.swift */; };
+		37A7741293F5C359E5B02C5EF14C72B9 /* AWSPlacePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C810E96EBE7A8BFDD973CB4B3C7285 /* AWSPlacePicker.swift */; };
+		439A3D912120C08B7FEE2CE82F2E91C6 /* HelperUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9273F1F510BCA878616714D814A16 /* HelperUtils.swift */; };
+		47E1A4A98CF52BA60352F31113AB6D0F /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450FD0E708EFD63B2E3BD780F1FEAC2 /* DropDown-dummy.m */; };
+		7287ED98918D0804181CC4A523F83730 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF673399F8B88866BDD2FC8984ADEE85 /* DPDKeyboardListener.swift */; };
+		9682B174CCF4078ED5F0A52CCE590C29 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F58F3FE066A7C71DFAFAE41380AD3 /* DropDown+Appearance.swift */; };
+		A76118D4369EDC4838AD9F019368321D /* Extensions+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193AC850BCB958E70F1B89E26CF831B /* Extensions+Models.swift */; };
+		AE3ADF8C9ED40286E0988F96548D57DB /* AWSPlacePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA766C7480FFF057F901C0128170986F /* AWSPlacePicker-dummy.m */; };
+		B2685B71AEC0373247B0C369052E10D3 /* DropDownCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B18BDB4943B52B2FD7A9417886CBEFE /* DropDownCustomCell.xib */; };
+		B51E664F2FEEC12F0B4197D9486396EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C51D6FD37C494BB48DE51E69A0EA055B /* AWSPlacePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB43775B3E2E5A8D20C0CC657668A9F0 /* AWSPlacePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1CD07321F5B671B041B1BCB7FC17578 /* AWSMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBC9F5D345FF84D0EDCEFAEE1C6A623 /* AWSMapVC.swift */; };
+		D5FC46C6CF4C50B6A183A109F0971198 /* AWSMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87EBD077E8657D15945A40F4D9729D1C /* AWSMapVC.xib */; };
+		D68CEF3368ED57182DB14C6736A19C61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E0B1CB4A0ABF370D85AC04DF28AB454C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EFAFD0B3FFF1AEFCEE861BF4733A67BA /* Pods-AWSPlacePickerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B123A75287338B2A1F96A2A15AEB66E4 /* Pods-AWSPlacePickerExample-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		00D65593D74BE8C3B21C15F21EDEDADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		0B865FAFBA9628A9C3B89D33E16F8B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		4B128049412F29B1A71AA940C04EC9C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 102FAEB69FE89376581F9DED69641A97;
+			remoteInfo = AWSPlacePicker;
+		};
+		5077C062A5648C44409EDC19D039D392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		5AF99CE65DF97C48C8910DD5C6CFFB44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		64EFAABDA084DFD30D6E0222E2368DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9589A87B65045C5A6B5630BB0EDE7D36;
+			remoteInfo = "AWSPlacePicker-SDKJsons";
+		};
+		84A9B240290AB4155A99A5FD842316B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		864BC5C14B341149A42D0E8A641C2074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		A6B009D05798F4CBC5D04502FC32814B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0F1B06D085D31D1121476AF439627C;
+			remoteInfo = "AWSPlacePicker-SDKNibs";
+		};
+		AEEECEA917431748F38F5B4D1CF0A08F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		E8DD2B3B03A0AFA4D075F0175354BB16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B8AB27101ED3A13941EDEDD1C361C0B;
+			remoteInfo = "AWSPlacePicker-SDKImages";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0F2C1B10DF7BD1F4D327375AC9515567 /* Pods-AWSPlacePickerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AWSPlacePickerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		0450FD0E708EFD63B2E3BD780F1FEAC2 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		06492AD3ACA96A5CDC2D3C92AF499058 /* AWSPlacePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSPlacePicker.modulemap; sourceTree = "<group>"; };
+		0C4E9DA57A8D6A862598341E0995EAA4 /* SDKNibs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SDKNibs.bundle; path = "AWSPlacePicker-SDKNibs.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4BEBC6083A0A010F088295108A3587 /* SDKImages.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SDKImages.bundle; path = "AWSPlacePicker-SDKImages.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA0D2B3C1FD248FF4C18E4CC6355D8F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0ECF8225B6CC2206A9E765B2926E57BF /* AWSPlacePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSPlacePicker-Info.plist"; sourceTree = "<group>"; };
+		1118A663E924AB82BAA8C12703C54A37 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		12C2EBC889C73EF01EE203EF542FD2F6 /* Pods-AWSPlacePickerExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AWSPlacePickerExample-frameworks.sh"; sourceTree = "<group>"; };
+		184795B08150FE6ABECEAD3AB2BF4180 /* AWSPlacePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AWSPlacePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1AAB262799D3FE36ADB04492DA48E2DF /* GooglePlaces.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.xcconfig; sourceTree = "<group>"; };
+		1E5A1421A57C927A7AAD8F40E4F8E78C /* Pods-AWSPlacePickerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AWSPlacePickerExample.modulemap"; sourceTree = "<group>"; };
+		242F58F3FE066A7C71DFAFAE41380AD3 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		256F4268766796FD5884866E209A357C /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
+		2AC95B4887761B71BDC9CE24FF7070BD /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3BF310F8BABA8DAA3688240C6637B413 /* Pods-AWSPlacePickerExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AWSPlacePickerExample-umbrella.h"; sourceTree = "<group>"; };
-		6EB28EBA7E617F427A38452D84A23A3C /* Pods-AWSPlacePickerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AWSPlacePickerExample.modulemap"; sourceTree = "<group>"; };
-		7EA54A0DAA20AC119CD27B6CA6476891 /* Pods-AWSPlacePickerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AWSPlacePickerExample-dummy.m"; sourceTree = "<group>"; };
+		35C810E96EBE7A8BFDD973CB4B3C7285 /* AWSPlacePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AWSPlacePicker.swift; path = AWSPlacePicker/SDK/AWSPlacePicker.swift; sourceTree = "<group>"; };
+		3B18BDB4943B52B2FD7A9417886CBEFE /* DropDownCustomCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DropDownCustomCell.xib; sourceTree = "<group>"; };
+		3D0B8F2754F8533B46A460C0DC801398 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		406DF8CDE11DF088E8F48682FE515D6D /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		4D20866E39C6A6E6B96BB5E415C29106 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		54BBBB47487C8EE3937C2928B032BA1F /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		5CBE0ED04AE201C3320A5E5FD28B9430 /* DropDown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.xcconfig; sourceTree = "<group>"; };
+		5CFE17E0B9E174B8EDAFE670411DE598 /* Pods-AWSPlacePickerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AWSPlacePickerExample.release.xcconfig"; sourceTree = "<group>"; };
+		6EBC9F5D345FF84D0EDCEFAEE1C6A623 /* AWSMapVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AWSMapVC.swift; sourceTree = "<group>"; };
+		6F781A94646254025C36E57476EA0E54 /* ResourceBundle-SDKNibs-AWSPlacePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SDKNibs-AWSPlacePicker-Info.plist"; sourceTree = "<group>"; };
+		70A9273F1F510BCA878616714D814A16 /* HelperUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelperUtils.swift; sourceTree = "<group>"; };
+		813DA5B653C04A78C6ECBD1F2A1467B4 /* SDKJsons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SDKJsons.bundle; path = "AWSPlacePicker-SDKJsons.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		815AF4078AAA92C64D3D8B37152528DF /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		816B0438A224F8BB8C9D9E7328811B69 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		87EBD077E8657D15945A40F4D9729D1C /* AWSMapVC.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AWSMapVC.xib; sourceTree = "<group>"; };
+		8976FBC2494AACDA0DF12925315C1BE7 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B843154E408518948A926E76313D014 /* ResourceBundle-SDKJsons-AWSPlacePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SDKJsons-AWSPlacePicker-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AFCEDEE9FF6044A1A4ECC065B708D52E /* Pods-AWSPlacePickerExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AWSPlacePickerExample-Info.plist"; sourceTree = "<group>"; };
-		B9E0FEFBBCA94CE390491EBB2F0D4C1A /* Pods-AWSPlacePickerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AWSPlacePickerExample.release.xcconfig"; sourceTree = "<group>"; };
-		E68108E42DCA343AEAF55CBB48D11201 /* Pods-AWSPlacePickerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AWSPlacePickerExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		F7782DA86F77707D4C6510BBA3593D69 /* Pods-AWSPlacePickerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AWSPlacePickerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A4BF05E41479CD3D994F3EF977EDF3A6 /* Pods-AWSPlacePickerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AWSPlacePickerExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA0AB098348302E7A8FCF3CF66D5132E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		B123A75287338B2A1F96A2A15AEB66E4 /* Pods-AWSPlacePickerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AWSPlacePickerExample-dummy.m"; sourceTree = "<group>"; };
+		BCA688324D2DE18AE4C8D475CEF886A3 /* AWSPlacePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSPlacePicker.xcconfig; sourceTree = "<group>"; };
+		BF673399F8B88866BDD2FC8984ADEE85 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		C0E0DA19FE0A56EBF602F63DAD8F8D71 /* Pods-AWSPlacePickerExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AWSPlacePickerExample-resources.sh"; sourceTree = "<group>"; };
+		C639C26C5B99F5D1EA04B9562B0D4C90 /* Pods-AWSPlacePickerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AWSPlacePickerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CAD48FA944E6E8D753D82DE0C916D295 /* AWSPlacePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSPlacePicker.framework; path = AWSPlacePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D193AC850BCB958E70F1B89E26CF831B /* Extensions+Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Extensions+Models.swift"; sourceTree = "<group>"; };
+		D1B343C248A2C0D1354E0651F94D34E2 /* Pods-AWSPlacePickerExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AWSPlacePickerExample-umbrella.h"; sourceTree = "<group>"; };
+		DE22FF7FD4CCA6D2DEDF4E37C484B7C6 /* Pods-AWSPlacePickerExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AWSPlacePickerExample-Info.plist"; sourceTree = "<group>"; };
+		DF6DB8FF58A253181639EED74BB4B932 /* ResourceBundle-SDKImages-AWSPlacePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SDKImages-AWSPlacePicker-Info.plist"; sourceTree = "<group>"; };
+		E0A760DCDFB6365BBCC813826EFBB4B7 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		E1B89F6044C5DACEDEE7996866E4D675 /* Pods-AWSPlacePickerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AWSPlacePickerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		EB5EE5D227F9C34121A3D8605AF68316 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		EFB9E26D71B2E3E6E0B4EE8F38429B25 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		F032C1B487DC6B5CF2CB2D0E3491DDFE /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		F039E86D4C9072A052D5814523D4F6E2 /* AWSPlacePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSPlacePicker-prefix.pch"; sourceTree = "<group>"; };
+		F2C747A435E6350AD148054ED95D189F /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		F40A402CA9AF67AA11DE9A667923023D /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
 		F79F2E0D1C95730083950DB314C67BDD /* Pods_AWSPlacePickerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AWSPlacePickerExample.framework; path = "Pods-AWSPlacePickerExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA766C7480FFF057F901C0128170986F /* AWSPlacePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSPlacePicker-dummy.m"; sourceTree = "<group>"; };
+		FB43775B3E2E5A8D20C0CC657668A9F0 /* AWSPlacePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSPlacePicker-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C7128238C81F03D56976A39B9B645EB1 /* Frameworks */ = {
+		005400DABE682414410863EDA3D3ED87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C36CAE7E5A54F6937A18BBD7055FDD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CCBA46D775CDEF4809848514625BE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51E664F2FEEC12F0B4197D9486396EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A4F3961265B365998CA6B9CF4685F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B1CB4A0ABF370D85AC04DF28AB454C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86E68E7851477D7F25D262BA4A7CC106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AC809011A2BE1385FE9CD9791DD72D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A7CB70B51647CE5AB1A40A0A4FDB4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68CEF3368ED57182DB14C6736A19C61 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D9AD432186C6F20E49863BB69013847 /* Products */ = {
+		00C36994045D415F67FEFAA773066CE3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6EBC9F5D345FF84D0EDCEFAEE1C6A623 /* AWSMapVC.swift */,
+			);
+			name = Controllers;
+			path = AWSPlacePicker/SDK/Controllers;
+			sourceTree = "<group>";
+		};
+		0663F554114F841D9DEF508E813B07C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63A9C13952D9993CE6A68EBF1E8039A3 /* Resources */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		121159C80389D101CBC77EE86FE39CB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0A760DCDFB6365BBCC813826EFBB4B7 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		281FDAE2AA10B83E0A71F7EBE2D34C0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA0AB098348302E7A8FCF3CF66D5132E /* GoogleMaps.framework */,
+				4D20866E39C6A6E6B96BB5E415C29106 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B4EAB4785100B867198FE306AF4CE36 /* AWSPlacePicker */ = {
+			isa = PBXGroup;
+			children = (
+				35C810E96EBE7A8BFDD973CB4B3C7285 /* AWSPlacePicker.swift */,
+				00C36994045D415F67FEFAA773066CE3 /* Controllers */,
+				8D29877C9B56F44CCC2097232395F33A /* Pod */,
+				0663F554114F841D9DEF508E813B07C1 /* Resources */,
+				E2B7B53B2243D6951D78A3EA94B0063F /* Support Files */,
+				FC4A1FAC9BC5A4AE58892A217220886B /* Utils */,
+			);
+			name = AWSPlacePicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2C3EE192AC2896F53DED4081400C6D1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1118A663E924AB82BAA8C12703C54A37 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4392F679500DAADF5BA6558896DD61BF /* Pods-AWSPlacePickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				1E5A1421A57C927A7AAD8F40E4F8E78C /* Pods-AWSPlacePickerExample.modulemap */,
+				C639C26C5B99F5D1EA04B9562B0D4C90 /* Pods-AWSPlacePickerExample-acknowledgements.markdown */,
+				A4BF05E41479CD3D994F3EF977EDF3A6 /* Pods-AWSPlacePickerExample-acknowledgements.plist */,
+				B123A75287338B2A1F96A2A15AEB66E4 /* Pods-AWSPlacePickerExample-dummy.m */,
+				12C2EBC889C73EF01EE203EF542FD2F6 /* Pods-AWSPlacePickerExample-frameworks.sh */,
+				DE22FF7FD4CCA6D2DEDF4E37C484B7C6 /* Pods-AWSPlacePickerExample-Info.plist */,
+				C0E0DA19FE0A56EBF602F63DAD8F8D71 /* Pods-AWSPlacePickerExample-resources.sh */,
+				D1B343C248A2C0D1354E0651F94D34E2 /* Pods-AWSPlacePickerExample-umbrella.h */,
+				E1B89F6044C5DACEDEE7996866E4D675 /* Pods-AWSPlacePickerExample.debug.xcconfig */,
+				5CFE17E0B9E174B8EDAFE670411DE598 /* Pods-AWSPlacePickerExample.release.xcconfig */,
+			);
+			name = "Pods-AWSPlacePickerExample";
+			path = "Target Support Files/Pods-AWSPlacePickerExample";
+			sourceTree = "<group>";
+		};
+		4EA8FCD117C90672AC0B5B762BE98DE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				827F9F6477FE49EEA14872C3414669A6 /* DropDown */,
+				936E7E3FAF2B956C1A633B91143D4DFF /* GoogleMaps */,
+				7ACC8FE61C3BE12BFE43083CA9117FA6 /* GooglePlaces */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63A9C13952D9993CE6A68EBF1E8039A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1EE216F2C90D24FBC82FCEB5C5E681C /* Assets */,
+				CC0BE8060AD520D6C5F74E04C9FD0324 /* Controllers */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		749A74F37A2D7DE099D96E5281BEB3C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAD48FA944E6E8D753D82DE0C916D295 /* AWSPlacePicker.framework */,
+				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
 				F79F2E0D1C95730083950DB314C67BDD /* Pods_AWSPlacePickerExample.framework */,
+				0D4BEBC6083A0A010F088295108A3587 /* SDKImages.bundle */,
+				813DA5B653C04A78C6ECBD1F2A1467B4 /* SDKJsons.bundle */,
+				0C4E9DA57A8D6A862598341E0995EAA4 /* SDKNibs.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B3A8C500BFC8D70C0A388CC7A0221C96 /* Pods-AWSPlacePickerExample */ = {
+		7A84E9A2C659DA32DDCDCA83808DBA95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6EB28EBA7E617F427A38452D84A23A3C /* Pods-AWSPlacePickerExample.modulemap */,
-				F7782DA86F77707D4C6510BBA3593D69 /* Pods-AWSPlacePickerExample-acknowledgements.markdown */,
-				E68108E42DCA343AEAF55CBB48D11201 /* Pods-AWSPlacePickerExample-acknowledgements.plist */,
-				7EA54A0DAA20AC119CD27B6CA6476891 /* Pods-AWSPlacePickerExample-dummy.m */,
-				AFCEDEE9FF6044A1A4ECC065B708D52E /* Pods-AWSPlacePickerExample-Info.plist */,
-				3BF310F8BABA8DAA3688240C6637B413 /* Pods-AWSPlacePickerExample-umbrella.h */,
-				0F2C1B10DF7BD1F4D327375AC9515567 /* Pods-AWSPlacePickerExample.debug.xcconfig */,
-				B9E0FEFBBCA94CE390491EBB2F0D4C1A /* Pods-AWSPlacePickerExample.release.xcconfig */,
+				815AF4078AAA92C64D3D8B37152528DF /* GoogleMapsBase.framework */,
 			);
-			name = "Pods-AWSPlacePickerExample";
-			path = "Target Support Files/Pods-AWSPlacePickerExample";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ACC8FE61C3BE12BFE43083CA9117FA6 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				2C3EE192AC2896F53DED4081400C6D1D /* Frameworks */,
+				8FB8277DFA7C952F29D3A1649DF9844B /* Resources */,
+				ACF5F3179443A89C8E33D551E95835FB /* Support Files */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		827F9F6477FE49EEA14872C3414669A6 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				816B0438A224F8BB8C9D9E7328811B69 /* DPDConstants.swift */,
+				BF673399F8B88866BDD2FC8984ADEE85 /* DPDKeyboardListener.swift */,
+				F2C747A435E6350AD148054ED95D189F /* DPDUIView+Extension.swift */,
+				F032C1B487DC6B5CF2CB2D0E3491DDFE /* DropDown.swift */,
+				242F58F3FE066A7C71DFAFAE41380AD3 /* DropDown+Appearance.swift */,
+				54BBBB47487C8EE3937C2928B032BA1F /* DropDownCell.swift */,
+				B7C3562FE513B1EFFF8BA26A302D65C5 /* Resources */,
+				BE8FBBBE050415C8BA8CF35C12160CB2 /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		8D29877C9B56F44CCC2097232395F33A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				184795B08150FE6ABECEAD3AB2BF4180 /* AWSPlacePicker.podspec */,
+				3D0B8F2754F8533B46A460C0DC801398 /* LICENSE */,
+				0DA0D2B3C1FD248FF4C18E4CC6355D8F /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		8FB8277DFA7C952F29D3A1649DF9844B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F40A402CA9AF67AA11DE9A667923023D /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		936E7E3FAF2B956C1A633B91143D4DFF /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				AD9D41C7A56A3AC08877807A9C392925 /* Base */,
+				E4047D9CC37490295127A0818130D0CB /* Maps */,
+				C4ED937B7E4CED2D159D0DA5234C6235 /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		ACF5F3179443A89C8E33D551E95835FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AAB262799D3FE36ADB04492DA48E2DF /* GooglePlaces.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GooglePlaces";
+			sourceTree = "<group>";
+		};
+		AD9D41C7A56A3AC08877807A9C392925 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7A84E9A2C659DA32DDCDCA83808DBA95 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		B7C3562FE513B1EFFF8BA26A302D65C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8976FBC2494AACDA0DF12925315C1BE7 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BE706327BADE511D7A2999EDA50ED465 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B4EAB4785100B867198FE306AF4CE36 /* AWSPlacePicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BE8FBBBE050415C8BA8CF35C12160CB2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB5EE5D227F9C34121A3D8605AF68316 /* DropDown.modulemap */,
+				5CBE0ED04AE201C3320A5E5FD28B9430 /* DropDown.xcconfig */,
+				0450FD0E708EFD63B2E3BD780F1FEAC2 /* DropDown-dummy.m */,
+				EFB9E26D71B2E3E6E0B4EE8F38429B25 /* DropDown-Info.plist */,
+				406DF8CDE11DF088E8F48682FE515D6D /* DropDown-prefix.pch */,
+				2AC95B4887761B71BDC9CE24FF7070BD /* DropDown-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -70,13 +467,42 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C1EE216F2C90D24FBC82FCEB5C5E681C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3B18BDB4943B52B2FD7A9417886CBEFE /* DropDownCustomCell.xib */,
+			);
+			name = Assets;
+			path = AWSPlacePicker/SDK/Assets;
+			sourceTree = "<group>";
+		};
+		C4ED937B7E4CED2D159D0DA5234C6235 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				256F4268766796FD5884866E209A357C /* GoogleMaps.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		CC0BE8060AD520D6C5F74E04C9FD0324 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				87EBD077E8657D15945A40F4D9729D1C /* AWSMapVC.xib */,
+			);
+			name = Controllers;
+			path = AWSPlacePicker/SDK/Controllers;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BE706327BADE511D7A2999EDA50ED465 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6D9AD432186C6F20E49863BB69013847 /* Products */,
-				DE0E87BC8C89098B7593672C5F50BCFA /* Targets Support Files */,
+				4EA8FCD117C90672AC0B5B762BE98DE2 /* Pods */,
+				749A74F37A2D7DE099D96E5281BEB3C3 /* Products */,
+				E4E80E470B8259394A3072B9213F7771 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,44 +514,193 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DE0E87BC8C89098B7593672C5F50BCFA /* Targets Support Files */ = {
+		E2B7B53B2243D6951D78A3EA94B0063F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3A8C500BFC8D70C0A388CC7A0221C96 /* Pods-AWSPlacePickerExample */,
+				06492AD3ACA96A5CDC2D3C92AF499058 /* AWSPlacePicker.modulemap */,
+				BCA688324D2DE18AE4C8D475CEF886A3 /* AWSPlacePicker.xcconfig */,
+				FA766C7480FFF057F901C0128170986F /* AWSPlacePicker-dummy.m */,
+				0ECF8225B6CC2206A9E765B2926E57BF /* AWSPlacePicker-Info.plist */,
+				F039E86D4C9072A052D5814523D4F6E2 /* AWSPlacePicker-prefix.pch */,
+				FB43775B3E2E5A8D20C0CC657668A9F0 /* AWSPlacePicker-umbrella.h */,
+				DF6DB8FF58A253181639EED74BB4B932 /* ResourceBundle-SDKImages-AWSPlacePicker-Info.plist */,
+				9B843154E408518948A926E76313D014 /* ResourceBundle-SDKJsons-AWSPlacePicker-Info.plist */,
+				6F781A94646254025C36E57476EA0E54 /* ResourceBundle-SDKNibs-AWSPlacePicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "AWSPlacePickerExample/Pods/Target Support Files/AWSPlacePicker";
+			sourceTree = "<group>";
+		};
+		E4047D9CC37490295127A0818130D0CB /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				281FDAE2AA10B83E0A71F7EBE2D34C0E /* Frameworks */,
+				121159C80389D101CBC77EE86FE39CB1 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		E4E80E470B8259394A3072B9213F7771 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4392F679500DAADF5BA6558896DD61BF /* Pods-AWSPlacePickerExample */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FC4A1FAC9BC5A4AE58892A217220886B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D193AC850BCB958E70F1B89E26CF831B /* Extensions+Models.swift */,
+				70A9273F1F510BCA878616714D814A16 /* HelperUtils.swift */,
+			);
+			name = Utils;
+			path = AWSPlacePicker/SDK/Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AF3C1F7FF47C031843C8426692F286F3 /* Headers */ = {
+		783E0ADF0C8A79FDDAC8D3E8093B4E99 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BD7117DA3F274D4811CB9146044379 /* Pods-AWSPlacePickerExample-umbrella.h in Headers */,
+				2DBA290BFD5DA7CC665EEEBF7E0CCF24 /* Pods-AWSPlacePickerExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E626082306CAE34321062A8140F19807 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51D6FD37C494BB48DE51E69A0EA055B /* AWSPlacePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC52B47FF93BDE67162436BE184A8481 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050C29784869D84F1A93B97368172D9F /* DropDown-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		102FAEB69FE89376581F9DED69641A97 /* AWSPlacePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83FDBBEEC409FE7730AC492CE6C925CB /* Build configuration list for PBXNativeTarget "AWSPlacePicker" */;
+			buildPhases = (
+				E626082306CAE34321062A8140F19807 /* Headers */,
+				D1E5FD623265863BA6168270C93076A0 /* Sources */,
+				2CCBA46D775CDEF4809848514625BE26 /* Frameworks */,
+				8F95C5B6BFF385AF0BF0CEE3C4E6F860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47911A3CA67B4A6EEE7685DAE0D09A1D /* PBXTargetDependency */,
+				F7EABC3A59DD22698B63226B57246B08 /* PBXTargetDependency */,
+				74AEAB36E88D3B1F2391280F619AA4CF /* PBXTargetDependency */,
+				0398E00AFFE464E532DBDF33AC029DED /* PBXTargetDependency */,
+				4AA184262FE35D07F3D1C5E46F1B4A7B /* PBXTargetDependency */,
+				7809CA9826AE65C18FA7CCAB7D986133 /* PBXTargetDependency */,
+			);
+			name = AWSPlacePicker;
+			productName = AWSPlacePicker;
+			productReference = CAD48FA944E6E8D753D82DE0C916D295 /* AWSPlacePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		33CE7A922EC7456CD81EEC2C557A1D58 /* Pods-AWSPlacePickerExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3DCE4EF2FCDB2A949997E37F0E3E2EF /* Build configuration list for PBXNativeTarget "Pods-AWSPlacePickerExample" */;
+			buildConfigurationList = 68DBA752322260AB689070D4BE17E739 /* Build configuration list for PBXNativeTarget "Pods-AWSPlacePickerExample" */;
 			buildPhases = (
-				AF3C1F7FF47C031843C8426692F286F3 /* Headers */,
-				21C776D0F133D7887739889C8D76637A /* Sources */,
-				C7128238C81F03D56976A39B9B645EB1 /* Frameworks */,
-				16D057586CD338A5AA35D3984B0CFF6B /* Resources */,
+				783E0ADF0C8A79FDDAC8D3E8093B4E99 /* Headers */,
+				A6521DC6670498CC9CC05072C399D2E7 /* Sources */,
+				D5A7CB70B51647CE5AB1A40A0A4FDB4D /* Frameworks */,
+				E35787C58F40E9270F8CFC8B52243A3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E4CA24A00EDFD6AE4106EFABB7A9B0D /* PBXTargetDependency */,
+				F5BB5A96F4344429865343D695E9F9BD /* PBXTargetDependency */,
+				C72854993ABB428EAFEE5A6B38DCE69D /* PBXTargetDependency */,
+				B330E40F23A45DA669EDF47DFD2984E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-AWSPlacePickerExample";
+			productName = "Pods-AWSPlacePickerExample";
+			productReference = F79F2E0D1C95730083950DB314C67BDD /* Pods_AWSPlacePickerExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B8AB27101ED3A13941EDEDD1C361C0B /* AWSPlacePicker-SDKImages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A50D70A295AC3B235F2E3F064A343ED /* Build configuration list for PBXNativeTarget "AWSPlacePicker-SDKImages" */;
+			buildPhases = (
+				4F6C24EBB38A0484F4D1D147E6F6FED9 /* Sources */,
+				86E68E7851477D7F25D262BA4A7CC106 /* Frameworks */,
+				456BCB6C889F3EAE3FCE2FAE42B1B4A2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-AWSPlacePickerExample";
-			productName = "Pods-AWSPlacePickerExample";
-			productReference = F79F2E0D1C95730083950DB314C67BDD /* Pods_AWSPlacePickerExample.framework */;
+			name = "AWSPlacePicker-SDKImages";
+			productName = "AWSPlacePicker-SDKImages";
+			productReference = 0D4BEBC6083A0A010F088295108A3587 /* SDKImages.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9589A87B65045C5A6B5630BB0EDE7D36 /* AWSPlacePicker-SDKJsons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C0B231EEB9ECB23D9279612AE76EE2 /* Build configuration list for PBXNativeTarget "AWSPlacePicker-SDKJsons" */;
+			buildPhases = (
+				90C52D279323E7E96376DD792FEED076 /* Sources */,
+				8AC809011A2BE1385FE9CD9791DD72D3 /* Frameworks */,
+				CB7990234258C68639B7F286C5FD7F0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AWSPlacePicker-SDKJsons";
+			productName = "AWSPlacePicker-SDKJsons";
+			productReference = 813DA5B653C04A78C6ECBD1F2A1467B4 /* SDKJsons.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AC0F1B06D085D31D1121476AF439627C /* AWSPlacePicker-SDKNibs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57FB2F5B211241CE17C69CABA848C3FE /* Build configuration list for PBXNativeTarget "AWSPlacePicker-SDKNibs" */;
+			buildPhases = (
+				445753B5A5CB79088B24838A1255E220 /* Sources */,
+				005400DABE682414410863EDA3D3ED87 /* Frameworks */,
+				37DADD6E68E19ABEF1F02657E56EADD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AWSPlacePicker-SDKNibs";
+			productName = "AWSPlacePicker-SDKNibs";
+			productReference = 0C4E9DA57A8D6A862598341E0995EAA4 /* SDKNibs.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA7C8D7CDCD9C80E4D326196D7693156 /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				EC52B47FF93BDE67162436BE184A8481 /* Headers */,
+				5371B8F6FF6982802546068CE7150A51 /* Sources */,
+				38A4F3961265B365998CA6B9CF4685F8 /* Frameworks */,
+				8F0DEE600FB429255931770B4B096DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -145,17 +720,62 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6D9AD432186C6F20E49863BB69013847 /* Products */;
+			productRefGroup = 749A74F37A2D7DE099D96E5281BEB3C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				102FAEB69FE89376581F9DED69641A97 /* AWSPlacePicker */,
+				5B8AB27101ED3A13941EDEDD1C361C0B /* AWSPlacePicker-SDKImages */,
+				9589A87B65045C5A6B5630BB0EDE7D36 /* AWSPlacePicker-SDKJsons */,
+				AC0F1B06D085D31D1121476AF439627C /* AWSPlacePicker-SDKNibs */,
+				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				0C1885900810601510E0C632060FAF26 /* GooglePlaces */,
 				33CE7A922EC7456CD81EEC2C557A1D58 /* Pods-AWSPlacePickerExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		16D057586CD338A5AA35D3984B0CFF6B /* Resources */ = {
+		37DADD6E68E19ABEF1F02657E56EADD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FC46C6CF4C50B6A183A109F0971198 /* AWSMapVC.xib in Resources */,
+				B2685B71AEC0373247B0C369052E10D3 /* DropDownCustomCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456BCB6C889F3EAE3FCE2FAE42B1B4A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0DEE600FB429255931770B4B096DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CDB6C4B2EBBC9287B41A996B928D8A0 /* DropDownCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F95C5B6BFF385AF0BF0CEE3C4E6F860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7990234258C68639B7F286C5FD7F0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E35787C58F40E9270F8CFC8B52243A3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,20 +785,170 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21C776D0F133D7887739889C8D76637A /* Sources */ = {
+		445753B5A5CB79088B24838A1255E220 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC09F8DD0BFA0C5EC50F0D92F4AD3A3D /* Pods-AWSPlacePickerExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F6C24EBB38A0484F4D1D147E6F6FED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5371B8F6FF6982802546068CE7150A51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6CCBEC80C18EB4E033152FE1E5BDEB /* DPDConstants.swift in Sources */,
+				7287ED98918D0804181CC4A523F83730 /* DPDKeyboardListener.swift in Sources */,
+				33B77FF5F46673509815278E6F2E813F /* DPDUIView+Extension.swift in Sources */,
+				9682B174CCF4078ED5F0A52CCE590C29 /* DropDown+Appearance.swift in Sources */,
+				47E1A4A98CF52BA60352F31113AB6D0F /* DropDown-dummy.m in Sources */,
+				13C1C13593600F6F830205D5AA8D34C7 /* DropDown.swift in Sources */,
+				0FFEFC199AA33BF659754A95768FE774 /* DropDownCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C52D279323E7E96376DD792FEED076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6521DC6670498CC9CC05072C399D2E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFAFD0B3FFF1AEFCEE861BF4733A67BA /* Pods-AWSPlacePickerExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E5FD623265863BA6168270C93076A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1CD07321F5B671B041B1BCB7FC17578 /* AWSMapVC.swift in Sources */,
+				AE3ADF8C9ED40286E0988F96548D57DB /* AWSPlacePicker-dummy.m in Sources */,
+				37A7741293F5C359E5B02C5EF14C72B9 /* AWSPlacePicker.swift in Sources */,
+				A76118D4369EDC4838AD9F019368321D /* Extensions+Models.swift in Sources */,
+				439A3D912120C08B7FEE2CE82F2E91C6 /* HelperUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0398E00AFFE464E532DBDF33AC029DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 5077C062A5648C44409EDC19D039D392 /* PBXContainerItemProxy */;
+		};
+		1E4CA24A00EDFD6AE4106EFABB7A9B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AWSPlacePicker;
+			target = 102FAEB69FE89376581F9DED69641A97 /* AWSPlacePicker */;
+			targetProxy = 4B128049412F29B1A71AA940C04EC9C6 /* PBXContainerItemProxy */;
+		};
+		47911A3CA67B4A6EEE7685DAE0D09A1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AWSPlacePicker-SDKImages";
+			target = 5B8AB27101ED3A13941EDEDD1C361C0B /* AWSPlacePicker-SDKImages */;
+			targetProxy = E8DD2B3B03A0AFA4D075F0175354BB16 /* PBXContainerItemProxy */;
+		};
+		4AA184262FE35D07F3D1C5E46F1B4A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 0B865FAFBA9628A9C3B89D33E16F8B5B /* PBXContainerItemProxy */;
+		};
+		74AEAB36E88D3B1F2391280F619AA4CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AWSPlacePicker-SDKNibs";
+			target = AC0F1B06D085D31D1121476AF439627C /* AWSPlacePicker-SDKNibs */;
+			targetProxy = A6B009D05798F4CBC5D04502FC32814B /* PBXContainerItemProxy */;
+		};
+		7809CA9826AE65C18FA7CCAB7D986133 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = 00D65593D74BE8C3B21C15F21EDEDADD /* PBXContainerItemProxy */;
+		};
+		B330E40F23A45DA669EDF47DFD2984E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = AEEECEA917431748F38F5B4D1CF0A08F /* PBXContainerItemProxy */;
+		};
+		B916F5827964906DC2B50536D827847F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 5AF99CE65DF97C48C8910DD5C6CFFB44 /* PBXContainerItemProxy */;
+		};
+		C72854993ABB428EAFEE5A6B38DCE69D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 84A9B240290AB4155A99A5FD842316B7 /* PBXContainerItemProxy */;
+		};
+		F5BB5A96F4344429865343D695E9F9BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 864BC5C14B341149A42D0E8A641C2074 /* PBXContainerItemProxy */;
+		};
+		F7EABC3A59DD22698B63226B57246B08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AWSPlacePicker-SDKJsons";
+			target = 9589A87B65045C5A6B5630BB0EDE7D36 /* AWSPlacePicker-SDKJsons */;
+			targetProxy = 64EFAABDA084DFD30D6E0222E2368DD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		12000BDF8CF6777365E73FC4820D9DE4 /* Debug */ = {
+		0A7AF2125962436430AFE8FDFD1366BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F2C1B10DF7BD1F4D327375AC9515567 /* Pods-AWSPlacePickerExample.debug.xcconfig */;
+			baseConfigurationReference = BCA688324D2DE18AE4C8D475CEF886A3 /* AWSPlacePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AWSPlacePicker";
+				IBSC_MODULE = AWSPlacePicker;
+				INFOPLIST_FILE = "Target Support Files/AWSPlacePicker/ResourceBundle-SDKImages-AWSPlacePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = SDKImages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		0B1C9EA6FD1181EF084D1FF76F39BDD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA688324D2DE18AE4C8D475CEF886A3 /* AWSPlacePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AWSPlacePicker";
+				IBSC_MODULE = AWSPlacePicker;
+				INFOPLIST_FILE = "Target Support Files/AWSPlacePicker/ResourceBundle-SDKJsons-AWSPlacePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = SDKJsons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1344C89D181BE282351F2517C5821517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CFE17E0B9E174B8EDAFE670411DE598 /* Pods-AWSPlacePickerExample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -209,8 +979,78 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1536636866EADCB00BD97464782C9A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA688324D2DE18AE4C8D475CEF886A3 /* AWSPlacePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AWSPlacePicker";
+				IBSC_MODULE = AWSPlacePicker;
+				INFOPLIST_FILE = "Target Support Files/AWSPlacePicker/ResourceBundle-SDKNibs-AWSPlacePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = SDKNibs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1B19462E3F9EDAD93B5CA9804C685604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CBE0ED04AE201C3320A5E5FD28B9430 /* DropDown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4408890F2B5E37FE79B3783AAAE23264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 256F4268766796FD5884866E209A357C /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -274,11 +1114,27 @@
 			};
 			name = Release;
 		};
-		6281FB48A965B71307A194CE1EEDC59A /* Release */ = {
+		6E6F10C4503C161DACCB6B3C822254CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9E0FEFBBCA94CE390491EBB2F0D4C1A /* Pods-AWSPlacePickerExample.release.xcconfig */;
+			baseConfigurationReference = BCA688324D2DE18AE4C8D475CEF886A3 /* AWSPlacePicker.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AWSPlacePicker";
+				IBSC_MODULE = AWSPlacePicker;
+				INFOPLIST_FILE = "Target Support Files/AWSPlacePicker/ResourceBundle-SDKNibs-AWSPlacePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = SDKNibs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		78B0CA091198D7EDFD38467371930985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA688324D2DE18AE4C8D475CEF886A3 /* AWSPlacePicker.xcconfig */;
+			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -289,23 +1145,60 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AWSPlacePickerExample/Pods-AWSPlacePickerExample-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSPlacePicker/AWSPlacePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSPlacePicker/AWSPlacePicker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AWSPlacePickerExample/Pods-AWSPlacePickerExample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/AWSPlacePicker/AWSPlacePicker.modulemap";
+				PRODUCT_MODULE_NAME = AWSPlacePicker;
+				PRODUCT_NAME = AWSPlacePicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E2A395B914949A03CC180766B2F35DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA688324D2DE18AE4C8D475CEF886A3 /* AWSPlacePicker.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSPlacePicker/AWSPlacePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSPlacePicker/AWSPlacePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/AWSPlacePicker/AWSPlacePicker.modulemap";
+				PRODUCT_MODULE_NAME = AWSPlacePicker;
+				PRODUCT_NAME = AWSPlacePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -377,9 +1270,175 @@
 			};
 			name = Debug;
 		};
+		960A2CE4BB696B8FDC4E3B842C873C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 256F4268766796FD5884866E209A357C /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D32CC866C6870BEA4E2563B08C75124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAB262799D3FE36ADB04492DA48E2DF /* GooglePlaces.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B94007E0A8B81065FB7AE6151D70CCBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B89F6044C5DACEDEE7996866E4D675 /* Pods-AWSPlacePickerExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AWSPlacePickerExample/Pods-AWSPlacePickerExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AWSPlacePickerExample/Pods-AWSPlacePickerExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DEF3B6224B2D4944D96CE3ABD857E23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA688324D2DE18AE4C8D475CEF886A3 /* AWSPlacePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AWSPlacePicker";
+				IBSC_MODULE = AWSPlacePicker;
+				INFOPLIST_FILE = "Target Support Files/AWSPlacePicker/ResourceBundle-SDKImages-AWSPlacePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = SDKImages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E5B921AF81671B7727C996C195F70EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CBE0ED04AE201C3320A5E5FD28B9430 /* DropDown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED0487989FE55E48A0EC6135330C73F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAB262799D3FE36ADB04492DA48E2DF /* GooglePlaces.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCDB5D8DC2D121F7BDF6E897189D40E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA688324D2DE18AE4C8D475CEF886A3 /* AWSPlacePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AWSPlacePicker";
+				IBSC_MODULE = AWSPlacePicker;
+				INFOPLIST_FILE = "Target Support Files/AWSPlacePicker/ResourceBundle-SDKJsons-AWSPlacePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = SDKJsons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1DCEC859B4F2831507AA9EFB3577A427 /* Build configuration list for PBXAggregateTarget "GooglePlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D32CC866C6870BEA4E2563B08C75124 /* Debug */,
+				ED0487989FE55E48A0EC6135330C73F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -389,11 +1448,65 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3DCE4EF2FCDB2A949997E37F0E3E2EF /* Build configuration list for PBXNativeTarget "Pods-AWSPlacePickerExample" */ = {
+		48CC349249A19634228A7E1EFD31E551 /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12000BDF8CF6777365E73FC4820D9DE4 /* Debug */,
-				6281FB48A965B71307A194CE1EEDC59A /* Release */,
+				4408890F2B5E37FE79B3783AAAE23264 /* Debug */,
+				960A2CE4BB696B8FDC4E3B842C873C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57FB2F5B211241CE17C69CABA848C3FE /* Build configuration list for PBXNativeTarget "AWSPlacePicker-SDKNibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6F10C4503C161DACCB6B3C822254CF /* Debug */,
+				1536636866EADCB00BD97464782C9A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68DBA752322260AB689070D4BE17E739 /* Build configuration list for PBXNativeTarget "Pods-AWSPlacePickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94007E0A8B81065FB7AE6151D70CCBB /* Debug */,
+				1344C89D181BE282351F2517C5821517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C0B231EEB9ECB23D9279612AE76EE2 /* Build configuration list for PBXNativeTarget "AWSPlacePicker-SDKJsons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1C9EA6FD1181EF084D1FF76F39BDD7 /* Debug */,
+				FCDB5D8DC2D121F7BDF6E897189D40E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83FDBBEEC409FE7730AC492CE6C925CB /* Build configuration list for PBXNativeTarget "AWSPlacePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78B0CA091198D7EDFD38467371930985 /* Debug */,
+				7E2A395B914949A03CC180766B2F35DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A50D70A295AC3B235F2E3F064A343ED /* Build configuration list for PBXNativeTarget "AWSPlacePicker-SDKImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF3B6224B2D4944D96CE3ABD857E23C /* Debug */,
+				0A7AF2125962436430AFE8FDFD1366BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA7C8D7CDCD9C80E4D326196D7693156 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5B921AF81671B7727C996C195F70EB1 /* Debug */,
+				1B19462E3F9EDAD93B5CA9804C685604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -13,9 +13,10 @@ DESC
   
   s.ios.deployment_target = '11.0'
 
+  s.source_files = 'AWSPlacePicker/SDK/**/*.{h,m,swift}'
   
   s.subspec 'Resources' do |resources|
-      resources.resource_bundle = {'SDKImages' => ['AWSPlacePicker/AWSPlacePickerSDK/Resources/**/*.{png}'],'SDKJsons' => ['AWSPlacePicker/AWSPlacePickerSDK/Resources/**/*.{json}'],'SDKNibs' => ['AWSPlacePicker/AWSPlacePickerSDK/**/*.{xib}']}
+      resources.resource_bundle = {'SDKImages' => ['AWSPlacePicker/SDK/Assets/**/*.{png, jpg, jpeg}'],'SDKJsons' => ['AWSPlacePicker/SDK/Assets/**/*.{json}'],'SDKNibs' => ['AWSPlacePicker/SDK/**/*.{xib}']}
   end
   
   s.static_framework = true
