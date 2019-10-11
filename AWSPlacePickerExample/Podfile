@@ -1,0 +1,4 @@
+target 'AWSPlacePickerExample' do
+  use_frameworks!
+  pod 'AWSPlacePicker', :path => '../'
+end
