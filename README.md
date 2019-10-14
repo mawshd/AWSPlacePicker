@@ -31,7 +31,7 @@ import AWSPlacePicker
 
 Then set api google key
 ```ruby
-AWSPlacePicker.shared.API_KEY = "AIzaSyDgOeL1TnDOy7ePEdvdcNs9sE2EDypRJ2Y";
+AWSPlacePicker.shared.API_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 ```
 Then After simply get location by using shared instance of AWSPlacePicker
 
