@@ -1,6 +1,0 @@
-framework module Pods_AWSPlacePickerExample {
-  umbrella header "Pods-AWSPlacePickerExample-umbrella.h"
-
-  export *
-  module * { export * }
-}

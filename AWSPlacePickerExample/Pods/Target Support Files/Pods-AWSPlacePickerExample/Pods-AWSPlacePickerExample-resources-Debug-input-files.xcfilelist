@@ -1,6 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-AWSPlacePickerExample/Pods-AWSPlacePickerExample-resources.sh
-${PODS_CONFIGURATION_BUILD_DIR}/AWSPlacePicker/SDKImages.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/AWSPlacePicker/SDKJsons.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/AWSPlacePicker/SDKNibs.bundle
-${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle
-${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle

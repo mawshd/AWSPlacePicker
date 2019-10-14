@@ -9,7 +9,7 @@ DESC
   s.homepage         = 'https://github.com/mawshd/AWSPlacePicker'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Awais Shahid' => 'm_aws_s@hotmail.com' }
-  s.source           = { :git => 'https://github.com/mawshd/AWSPlacePicker.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mawshd/AWSPlacePicker.git', :tag => "#{s.version}" }
   
   s.ios.deployment_target = '11.0'
 

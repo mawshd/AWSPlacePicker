@@ -1,6 +1,0 @@
-framework module AWSPlacePicker {
-  umbrella header "AWSPlacePicker-umbrella.h"
-
-  export *
-  module * { export * }
-}
