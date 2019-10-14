@@ -412,11 +412,13 @@ extension AWSLocationManager {
 
 class HelperUtils {
     
-    class func loadJson(fileName : String) -> (dic:[String:Any]?, ary:[Dictionary<String, Any>]?) {
+    class func loadJson(fileName : String) -> (dic:[String:Any]?, ary:[[String:Any]]?) {
         if let filePath = Bundle.json?.path(forResource: fileName, ofType: "json"), let data = NSData(contentsOfFile: filePath) {
             let dic = try? JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments) as? [String:Any]
-            let ary = try? JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments) as? [Dictionary<String, Any>]
-            return(dic, ary)
+            if let ary = try? JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments) as? [[String:Any]] {
+                return(dic, ary)
+            }
+            return(dic, nil)
         }
         return (nil,nil)
     }
