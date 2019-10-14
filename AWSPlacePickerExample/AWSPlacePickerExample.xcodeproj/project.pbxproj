@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -80,7 +80,6 @@
 				A178AF3CD9A008661F64CF16 /* Pods-AWSPlacePickerExample.debug.xcconfig */,
 				39EFD5485AEC69687247BDB5 /* Pods-AWSPlacePickerExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

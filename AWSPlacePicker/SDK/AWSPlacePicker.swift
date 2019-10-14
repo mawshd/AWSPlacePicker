@@ -7,21 +7,24 @@
 
 import UIKit
 import Foundation
+import GoogleMaps
+public class AWSPlacePicker : NSObject {
+    public static let shared = AWSPlacePicker()
+    public var API_KEY = ""
 
-open class AWSPlacePicker : NSObject {
-    static let shared = AWSPlacePicker()
-    let API_KEY = ""
-
-    private override init() {
+    override init() {
         
     }
     
-    func pickLocationFrom(from: UIViewController, onLocationSelection:@escaping (AWSLocation)->(), onCancellation: (() -> ())? = nil) {
+    public func pickLocationFrom(from: UIViewController?, selectedLocation : AWSLocation? = nil, onLocationSelection:@escaping (AWSLocation?)->(), onCancellation: (() -> ())? = nil) {
         if API_KEY.isEmpty {
             fatalError("Google API Key required")
         }
         GOOGLE_API_KEY = self.API_KEY
-        let vc = AWSMapVC.init(nibName: "AWSMapVC", bundle: nil)
-        from.present(vc, animated: true, completion: nil)
+        UIApplication.setupInitials()
+        let vc = AWSPlacePickerVC.init(nibName: "AWSPlacePickerVC", bundle: Bundle.xibs)
+        vc.selectedLocation = selectedLocation
+        vc.onLocationSelection = onLocationSelection
+        from?.present(vc, animated: true, completion: nil)
     }
 }

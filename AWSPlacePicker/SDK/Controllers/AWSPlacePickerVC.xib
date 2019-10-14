@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AWSPlacePickerVC" customModule="SDKNibs" customModuleProvider="target">
+            <connections>
+                <outlet property="mapView" destination="EIv-PX-Dzt" id="8mK-U6-hKd"/>
+                <outlet property="marker" destination="7pU-FB-yFb" id="jCi-Y1-bRr"/>
+                <outlet property="textField" destination="41D-JA-QLt" id="9Y1-vf-dek"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIv-PX-Dzt" customClass="GMSMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAy-E6-Cu8">
+                    <rect key="frame" x="16" y="60" width="382" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="41D-JA-QLt" customClass="AWSPlacePickerTextField" customModule="AWSPlacePicker">
+                            <rect key="frame" x="8" y="0.0" width="366" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="41D-JA-QLt" secondAttribute="bottom" id="5H8-pP-957"/>
+                        <constraint firstAttribute="height" constant="40" id="6Rq-Qd-56x"/>
+                        <constraint firstItem="41D-JA-QLt" firstAttribute="leading" secondItem="OAy-E6-Cu8" secondAttribute="leading" constant="8" id="7eH-at-H4o"/>
+                        <constraint firstAttribute="trailing" secondItem="41D-JA-QLt" secondAttribute="trailing" constant="8" id="AXq-SA-XyE"/>
+                        <constraint firstItem="41D-JA-QLt" firstAttribute="top" secondItem="OAy-E6-Cu8" secondAttribute="top" id="plA-6v-tDw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="border">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vz-qn-Rbu">
+                    <rect key="frame" x="142" y="806" width="130" height="40"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="08a-1Y-bKM"/>
+                        <constraint firstAttribute="width" constant="130" id="4CV-Uf-qgs"/>
+                    </constraints>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="DoneTapped:" destination="-1" eventType="touchUpInside" id="YrV-Uw-N0a"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marker.png" translatesAutoresizingMaskIntoConstraints="NO" id="7pU-FB-yFb">
+                    <rect key="frame" x="188" y="404" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="9KC-2f-SnS"/>
+                        <constraint firstAttribute="width" constant="38" id="NwJ-UN-Z84"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OAy-E6-Cu8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3va-AJ-PzM"/>
+                <constraint firstItem="OAy-E6-Cu8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="AIe-VG-pyk"/>
+                <constraint firstItem="7pU-FB-yFb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-25" id="Ams-eS-P7p"/>
+                <constraint firstItem="7pU-FB-yFb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bdh-PY-o5f"/>
+                <constraint firstItem="8Vz-qn-Rbu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TGO-8T-rAt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OAy-E6-Cu8" secondAttribute="trailing" constant="16" id="UE8-zN-KRj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8Vz-qn-Rbu" secondAttribute="bottom" constant="16" id="bed-sr-06M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EIv-PX-Dzt" secondAttribute="trailing" id="dI7-Zj-xrw"/>
+                <constraint firstAttribute="bottom" secondItem="EIv-PX-Dzt" secondAttribute="bottom" id="lFj-lT-lwM"/>
+                <constraint firstItem="EIv-PX-Dzt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mkh-JP-aEP"/>
+                <constraint firstItem="EIv-PX-Dzt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tsd-4Y-c3v"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="marker.png" width="50" height="50"/>
+    </resources>
+</document>

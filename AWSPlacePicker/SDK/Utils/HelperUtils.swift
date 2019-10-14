@@ -9,24 +9,25 @@ import UIKit
 import Foundation
 import DropDown
 import GoogleMaps
+import IQKeyboardManagerSwift
 
 var GOOGLE_API_KEY = ""
 
-protocol AWSPlacePickerDelegate {
+protocol AWSPlacePickerTextFieldDelegate {
     func didSelectLocationFor (textField : AWSPlacePickerTextField, location : String)
     func didSelectedAWSLocationFor (textField : AWSPlacePickerTextField, location : AWSLocation)
     func textDidChangeFor (textField : AWSPlacePickerTextField, text : String)
     func textFieldCleared (textField : AWSPlacePickerTextField)
 }
 
-extension AWSPlacePickerDelegate {
+extension AWSPlacePickerTextFieldDelegate {
     func textDidChangeFor (textField : AWSPlacePickerTextField, text : String) {}
     func textFieldCleared (textField : AWSPlacePickerTextField) {}
 }
 
 class AWSPlacePickerTextField : UITextField {
     
-    var AWSdelegate : AWSPlacePickerDelegate?
+    var AWSdelegate : AWSPlacePickerTextFieldDelegate?
     var shouldSearchOnlyCities = false
     
     private var shouldShow = false
@@ -193,7 +194,7 @@ class AWSPlacePickerTextField : UITextField {
         dropDown.dataSource = strAry
         dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
         dropDown.topOffset = CGPoint(x: 0, y:-self.bounds.height)
-        dropDown.cellNib = UINib(nibName: "DropDownCustomCell", bundle: nil)
+        dropDown.cellNib = UINib(nibName: "DropDownCustomCell", bundle: Bundle.xibs)
         
         dropDown.selectionAction = { (index: Int, item: String) in
             self.text=item
@@ -219,12 +220,12 @@ class AWSLocationManager : NSObject {
     
     fileprivate (set) var latitude : Double {
         get { return UserDefaults.standard.double(forKey: LOCATION_KEYS.LATITUDE) }
-        set { UserDefaults.standard.set(newValue, forKey: LOCATION_KEYS.LATITUDE)}
+        set { UserDefaults.standard.set(newValue, forKey: LOCATION_KEYS.LATITUDE) }
     }
     
     fileprivate (set) var longitude : Double {
         get { return UserDefaults.standard.double(forKey: LOCATION_KEYS.LONGITUDE) }
-        set { UserDefaults.standard.set(newValue, forKey: LOCATION_KEYS.LONGITUDE)}
+        set { UserDefaults.standard.set(newValue, forKey: LOCATION_KEYS.LONGITUDE) }
     }
     
     fileprivate (set) var address : String {
@@ -250,11 +251,11 @@ class AWSLocationManager : NSObject {
     private func registerForLocationServices() {
         locationManager = CLLocationManager()
         locationManager?.delegate = self
-        //locationManager?.requestWhenInUseAuthorization()
+        locationManager?.requestLocation()
         locationManager?.distanceFilter = 25
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         
-        locationManager?.requestAlwaysAuthorization()
+        //locationManager?.requestAlwaysAuthorization()
         locationManager?.allowsBackgroundLocationUpdates = true
         locationManager?.pausesLocationUpdatesAutomatically = false
         startUpdatingLocation()
@@ -367,6 +368,12 @@ extension AWSLocationManager {
     }
 }
 
+extension UIApplication {
+    class func setupInitials() {
+        GMSServices.provideAPIKey(GOOGLE_API_KEY)
+        IQKeyboardManager.shared.enable = true
+    }
+}
 
 extension AWSLocationManager {
     
@@ -401,3 +408,31 @@ extension AWSLocationManager {
     }
 }
 
+
+
+class HelperUtils {
+    
+    class func loadJson(fileName : String) -> (dic:[String:Any]?, ary:[[String:Any]]?) {
+        if let filePath = Bundle.json?.path(forResource: fileName, ofType: "json"), let data = NSData(contentsOfFile: filePath) {
+            let dic = try? JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments) as? [String:Any]
+            let ary = try? JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments) as? [[String:Any]]
+            return(dic, ary)
+        }
+        return (nil,nil)
+    }
+    
+    class func getMapStyle() -> String {
+        let stylesAry = HelperUtils.loadJson(fileName: "MapStyle").ary
+        return HelperUtils.getJsonString(from: stylesAry ?? [:])
+    }
+
+    class func getJsonString(from obj: Any) -> String {
+        do {
+            let jsonData = try JSONSerialization.data(withJSONObject: obj, options: .prettyPrinted)
+            let jsonString = String(data: jsonData, encoding: .utf8) ?? ""
+            return jsonString.filter { !" \n\t\r".contains($0) }
+        } catch {
+            return error.localizedDescription
+        }
+    }
+}

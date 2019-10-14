@@ -10,15 +10,15 @@ import UIKit
 import CoreLocation
 import GoogleMaps
 
-struct AWSLocation {
-    var id : String? //place id
-    var postcode : String?
-    var city : String?
-    var country : String?
-    var country_short : String?
-    var latitude : Double?
-    var longitude : Double?
-    var address : String?
+public struct AWSLocation {
+    public var id : String? //place id
+    public var postcode : String?
+    public var city : String?
+    public var country : String?
+    public var country_short : String?
+    public var latitude : Double?
+    public var longitude : Double?
+    public var address : String?
 }
 
 struct LOCATION_KEYS {
@@ -67,5 +67,91 @@ extension GMSAddress {
 }
 
 
+extension Bundle {
+    class var json : Bundle? {
+        if let url = Bundle(for: AWSPlacePicker.self).url(forResource: "SDKJsons", withExtension: "bundle") {
+            return Bundle(url: url)
+        }
+        return nil
+    }
+    class var xibs : Bundle? {
+        if let url = Bundle(for: AWSPlacePicker.self).url(forResource: "SDKNibs", withExtension: "bundle") {
+            return Bundle(url: url)
+        }
+        return nil
+    }
+    class var images : Bundle? {
+        if let url = Bundle(for: AWSPlacePicker.self).url(forResource: "SDKImages", withExtension: "bundle") {
+            return Bundle(url: url)
+        }
+        return nil
+    }
+}
 
 
+
+extension UIImage {
+    class func imageWith(name:String, ext: String = "png") -> UIImage {
+        return UIImage(named: "\(name).\(ext)", in: Bundle.images, compatibleWith: nil) ?? UIImage()
+    }
+}
+
+extension UIView {
+    
+    @IBInspectable var corner: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            if newValue > 0 {
+                layer.cornerRadius = newValue
+            }
+        }
+    }
+    
+    @IBInspectable var border: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            if newValue > 0 {
+                layer.borderWidth = newValue
+            }
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor {
+        get {
+            return UIColor(cgColor: layer.borderColor!)
+        }
+        set {
+            layer.borderColor = newValue.cgColor
+        }
+    }
+    
+    @IBInspectable var circle: Bool {
+        get {
+            return layer.cornerRadius == bounds.size.height/2
+        }
+        set {
+            if newValue {
+                layer.cornerRadius = bounds.size.height/2
+            }
+        }
+    }
+    
+    @IBInspectable var shadow: Bool {
+        get {
+            return false
+        }
+        set {
+            if newValue {
+                layer.shadowOffset = CGSize(width: 0.85, height: 1.7)
+                layer.borderColor = backgroundColor?.cgColor
+                layer.shadowRadius = 3
+                layer.shadowOpacity = 1
+            }
+        }
+    }
+    
+}

@@ -24,5 +24,6 @@ DESC
   s.dependency 'GoogleMaps'
   s.dependency 'GooglePlaces'
   s.dependency 'DropDown'
+  s.dependency 'IQKeyboardManagerSwift'
 
 end

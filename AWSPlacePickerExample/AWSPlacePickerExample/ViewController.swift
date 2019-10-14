@@ -14,9 +14,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+
     }
-
-
+    
+    
+    @IBAction func selectLocation(_ sender: UIButton) {
+        AWSPlacePicker.shared.API_KEY = "";
+        AWSPlacePicker.shared.pickLocationFrom(from: self, onLocationSelection: { (loc) in
+            sender.setTitle(loc?.address, for: .normal)
+        }, onCancellation: nil)
+    }
+    
 }
 
