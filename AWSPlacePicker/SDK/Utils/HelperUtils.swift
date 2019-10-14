@@ -414,11 +414,9 @@ class HelperUtils {
     
     class func loadJson(fileName : String) -> (dic:[String:Any]?, ary:[[String:Any]]?) {
         if let filePath = Bundle.json?.path(forResource: fileName, ofType: "json"), let data = NSData(contentsOfFile: filePath) {
-            let dic = try? JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments) as? [String:Any]
-            if let ary = try? JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments) as? [[String:Any]] {
-                return(dic, ary)
+            if let json = try? JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments) {
+                return (json as? [String:Any], json as? [[String:Any]])
             }
-            return(dic, nil)
         }
         return (nil,nil)
     }
